@@ -1,20 +1,19 @@
 public class Main {
     public static void main(String[] args) {
         int amount = 100; // начальный баланс клиента
-        int plus = 1000; // сумма пополнения
-        int summa = amount + plus; // сумма с пополнением
+        int replenishment = 1000; // сумма пополнения
+        int sum = amount + replenishment; // сумма с пополнением
         int bonus; // количество бонусов
-        int itog; // =итоговая сумма с бонусом
-                if(summa > 1000) {
-                bonus = summa / 100;
-                itog = bonus + summa;
-                        }
-                else {
-                    bonus = 0;
-                    itog = bonus + summa;
-                }
+        int result; // =итоговая сумма с бонусом
+        if (sum > 1000) {
+            bonus = sum / 100;
+            result = bonus + sum;
+        } else {
+            bonus = 0;
+            result = bonus + sum;
+        }
 
-                System.out.println( bonus + " рублей количество бонусов");
-        System.out.println( itog + " рублей итоговый счет");
+        System.out.println(bonus + " рублей количество бонусов");
+        System.out.println(result + " рублей итоговый счет");
     }
 }
